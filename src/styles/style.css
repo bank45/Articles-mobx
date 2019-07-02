@@ -1,11 +1,8 @@
-$background-grey: #f3f3f3;
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.3rem;
-  background-color: $background-grey;
-}
+  background-color: #f3f3f3; }
 
 button {
   padding: 0;
@@ -13,8 +10,8 @@ button {
   font: inherit;
   color: inherit;
   background-color: transparent;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .btn {
   display: inline-block;
   text-align: center;
@@ -26,30 +23,28 @@ button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: large;
   color: aliceblue;
-  background-color: #002397;
-}
+  background-color: #002397; }
+
 .btn:active {
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
   transform: translateY(1px);
-  filter: saturate(150%);
-}
+  -webkit-filter: saturate(150%);
+  filter: saturate(150%); }
 
 .btn:hover {
   color: #9050AA;
   border-color: currentColor;
-  background-color: white;
-} 
+  background-color: white; }
 
 .btn:hover,
 .btn:focus {
- color: #2500f8;
- border-color: currentColor;
- background-color: rgb(255, 147, 7);
-}
+  color: #2500f8;
+  border-color: currentColor;
+  background-color: #ff9307; }
 
 .btn {
-  outline: none;
-}
+  outline: none; }
 
 .btn::-moz-focus-inner {
-  border: none;
-}
+  border: none; }
