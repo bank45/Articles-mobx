@@ -5,17 +5,13 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "react-scripts start",
-    "dev": "webpack-dev-server --open & json-server --watch db.json --port 5000",
-    "build-babel": "rimraf .build1/ && babel ./src --out-dir .build1/ --copy-files",
-    "build-webpack": "rimraf .build2/ && webpack --config webpack.config.js --mode development",
-    "build": "npm run build-babel && npm run build-webpack"
+    "dev": "webpack-dev-server --open & json-server --watch db.json --port 5000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "@types/http-proxy-middleware": "^0.19.2",
     "mobx": "^5.10.1",
     "mobx-react": "^6.1.1",
     "mobx-react-router": "^4.0.7",
@@ -79,8 +75,6 @@
     "typescript": "^3.5.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-middleware": "^3.7.0",
-    "webpack-dev-server": "^3.7.2",
-    "webpack-hot-middleware": "^2.25.0"
+    "webpack-dev-server": "^3.7.2"
   }
 }

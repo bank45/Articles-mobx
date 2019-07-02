@@ -32,8 +32,6 @@ class App extends React.Component<Props> {
             <Header />
             {this.renderMenu()}
             <main>
-                {this.props.children}
-            </main>
             <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/articles" component={Articles} exact />
@@ -41,6 +39,7 @@ class App extends React.Component<Props> {
                 <Route path="/login" component={Login} />
                 <Route path="/" component={Page404} />
             </Switch>
+            </main>
         </div>
     }
 }

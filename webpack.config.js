@@ -12,24 +12,26 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
+        historyApiFallback: true,
         port: 9000,
         proxy: {
             '/api': {
-                target:'http://localhost:5000/api',
+                target: 'http://localhost:5000/api',
                 pathRewrite: {
-                    '^/api/articles/interesting' : '',
-                    '^/api/articles/new' : '',
+                    '^/api/articles/interesting': '',
+                    '^/api/articles/new': '',
+                }
             }
-            }
-          }
-      },
+        }
+    },
     module: {
         rules: [
+            
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 exclude: /node_modules/
-              },
+            },
             {
                 enforce: "pre", test: /\.js$/, loader: "source-map-loader"
             },
@@ -60,5 +62,5 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
     },
-    
+
 }

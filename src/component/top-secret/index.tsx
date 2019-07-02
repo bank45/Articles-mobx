@@ -1,13 +1,10 @@
 import * as React from 'react';
 import { Redirect } from 'react-router-dom';
-import { inject, observer } from 'mobx-react';
 
 interface IRecProps {
     onLogin?: any;
     handlerLogin: any
 }
-
-
 
 class Secret extends React.Component<IRecProps> {
     renderSecret = () => {
@@ -29,7 +26,6 @@ class Secret extends React.Component<IRecProps> {
         return (
             <div>
                 {topLog}
-                {this.renderSecret()}
             </div>
         )
     }

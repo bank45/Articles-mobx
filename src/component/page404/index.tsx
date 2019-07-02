@@ -1,3 +1,12 @@
-import Navbar from './page404'
+import * as React from 'react';
 
-export default Navbar;
+const Page404 = () => {
+    return (
+        <div className="page404">
+            <h3>Page404</h3>
+            <p>Несуществующая страница</p>
+        </div>
+    )
+}
+
+export default Page404;
