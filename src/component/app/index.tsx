@@ -38,7 +38,7 @@ class App extends React.Component<Props> {
                 <Route path="/" component={Home} exact />
                 <Route path="/articles" component={Articles} exact />
                 <Route path="/top-secret" component={Secret} />
-                {/* <Route path="/login" component={Login} /> */}
+                <Route path="/login" component={Login} />
                 <Route path="/" component={Page404} />
             </Switch>
         </div>
