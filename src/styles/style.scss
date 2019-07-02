@@ -4,7 +4,62 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.3rem;
-  background-color: $background-grey;
+}
+
+
+.header{
+  background: #9050AA;
+  height: 50px;
+  max-width: 950px;
+}
+
+.header>a{
+  color: #f3f3f3;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navBar{
+  background: #9d8bff;
+  max-width: 950px;
+}
+
+.home-page{
+  max-width: 950px;
+}
+
+.topSecret{
+max-width: 950px;
+}
+
+.topSecret>h3{
+  text-align: center;
+}
+
+
+.home-page>main>p{
+  text-align: justify;
+}
+
+.home-page>h3{
+  text-align: center;
+}
+               
+.sectionHed{
+  max-width: 400px;
+}
+
+.sectionHed > h3{
+  text-align: center;
+}
+
+ul.menu{
+  margin: 0;
+}
+
+.content>*{
+  display: inline-block;
+
 }
 
 button {
