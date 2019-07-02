@@ -8,6 +8,7 @@ class Articles extends React.Component {
             <div className="content">
                 <InteresNews />
                 <NewNews />
+                
             </div>
         )
     }
