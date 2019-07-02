@@ -13,18 +13,19 @@ class Login extends React.Component<LoginProps> {
     checkLogin = async (e: any) => {
         e.preventDefault()
         const formData = new FormData(e.target)
-        const form = {}
-        formData.forEach(async (f)=> {
-            console.log(f)
+        const form:any = []
+        formData.forEach(async function (f) {
+            form.push(f)
+            console.log(form)
         })
-        // if (form['username'] === 'Dog' && form['password'] === '777') {
-        //     const date: any = new Date()
-        //     console.log(date)
-        //     document.cookie = `sessionId=werer234890834; path=/; expires=${date}`;
-        //     this.clickAccess();
-        // } else {
-        //     this.clickDenied();
-        // }
+        if (form[0] === 'Dog' && form[1] === '777') {
+            const date: any = new Date()
+            console.log(date)
+            document.cookie = `sessionId=werer234890834; path=/; expires=${date}`;
+            this.clickAccess();
+        } else {
+            this.clickDenied();
+        }
     }
 
     private clickDenied = async () => {
