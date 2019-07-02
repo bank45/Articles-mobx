@@ -1,0 +1,11 @@
+.divForm{
+    padding: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inLogin {
+    width: 200px; 
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(159, 160, 223);
+}

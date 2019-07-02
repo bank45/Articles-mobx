@@ -4,7 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     mode: "development",
-    entry: './src/index.tsx',
+    entry: ["@babel/polyfill", "./src/index.tsx"],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js"
@@ -16,7 +16,10 @@ module.exports = {
         proxy: {
             '/api': {
                 target:'http://localhost:5000/api',
-                pathRewrite: {'^/api/articles/' : ''}
+                pathRewrite: {
+                    '^/api/articles/interesting' : '',
+                    '^/api/articles/new' : '',
+            }
             }
           }
       },
