@@ -16,7 +16,6 @@ class Login extends React.Component<LoginProps> {
         const form:any = []
         formData.forEach(async function (f) {
             form.push(f)
-            console.log(form)
         })
         if (form[0] === 'Dog' && form[1] === '777') {
             const date: any = new Date()

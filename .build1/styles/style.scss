@@ -4,5 +4,125 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.3rem;
-  background-color: $background-grey;
+}
+
+
+.header{
+  background: #9050AA;
+  height: 50px;
+  max-width: 950px;
+}
+
+.header>a{
+  color: #f3f3f3;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navBar{
+  background: #9d8bff;
+  max-width: 950px;
+}
+
+.home-page{
+  max-width: 950px;
+}
+
+.topSecret{
+max-width: 950px;
+}
+
+.topSecret>h3{
+  text-align: center;
+}
+
+
+.home-page>main>p{
+  text-align: justify;
+}
+
+.home-page>h3{
+  text-align: center;
+}
+               
+.sectionHed{
+  max-width: 400px;
+  max-height: 100px;
+}
+
+.sectionHed > h3{
+  text-align: center;
+}
+
+ul.menu{
+  margin: 0;
+}
+
+.content{
+  max-width: 950px;
+}
+
+.content > div{
+  display: inline;
+  float: left;
+  width: 50%;
+  }
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  color: aliceblue;
+  background-color: #002397;
+}
+.btn:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+.btn:hover {
+  color: #9050AA;
+  border-color: currentColor;
+  background-color: white;
+} 
+
+.btn:hover,
+.btn:focus {
+ color: #2500f8;
+ border-color: currentColor;
+ background-color: rgb(255, 147, 7);
+}
+
+.btn {
+  outline: none;
+}
+
+.btn::-moz-focus-inner {
+  border: none;
+}
+
+.divForm{
+  padding: 50px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.inLogin {
+  width: 200px; 
+  padding: 10px;
+  margin: auto;
+  background-color: rgb(159, 160, 223);
 }

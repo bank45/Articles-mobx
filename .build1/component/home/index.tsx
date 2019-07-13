@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import Contact from '../Contact'
-
 class Home extends React.Component {
     render() {
         return (
@@ -23,9 +21,7 @@ class Home extends React.Component {
                     <aside>
                         <input type="text" /><br />
                         <input type="submit" />
-                        {/* <Contact /> */}
                     </aside>
-                    {/* {this.props.children} */}
                 </main>
             </div>
         )
