@@ -23,7 +23,7 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.0.1",
-    "react-scripts-ts": "^3.1.0"
+    "react-scripts-ts": "^4.0.8"
   },
   "browserslist": {
     "production": [
@@ -66,7 +66,7 @@
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.1",
     "inline-source-map": "^0.6.2",
     "json-loader": "^0.5.7",
     "json-server": "^0.15.0",
